@@ -8,7 +8,7 @@ class Employee {
         this.manager = manager;
 
         if (this.manager instanceof Employee) {
-            manager.addEmployee.(this);
+            manager.addEmployee(this);
         }
     }
 
@@ -21,4 +21,10 @@ class Employee {
     
 }
 
-Module.exports = Employee;
+
+const leo = new Employee('Leo', 100000, 'Ninja');
+console.log(leo);
+
+
+
+module.exports = Employee;
